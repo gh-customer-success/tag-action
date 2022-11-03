@@ -7,7 +7,7 @@ on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     tags:
-      - v[0-9].[0-9].[0-9]-rc.*
+      - v[0-9].[0-9].[0-9]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -26,4 +26,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo '### Successful QA Deployment!! :rocket:' >> $GITHUB_STEP_SUMMARY
+        run: echo '### Successful Prod Ship!! :rocket:' >> $GITHUB_STEP_SUMMARY
